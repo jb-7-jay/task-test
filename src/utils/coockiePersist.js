@@ -3,8 +3,10 @@ const persistTasks = (tasks) => {
 }
 
 const getPersistedTasks = () => {
-  const tasks = JSON.parse(document.cookie || [])
-  return tasks
+  if (document?.cookie) {
+    return JSON.parse(document.cookie || [])
+  }
+  return []
 }
 
 export {
