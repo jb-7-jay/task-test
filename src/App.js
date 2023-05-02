@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Tasks from './components/Tasks';
+
+// Task list
+// Add task, delete
+// Task detail card
 
 function App() {
+  console.log('document.cookie', document.cookie)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Tasks />
     </div>
   );
 }
